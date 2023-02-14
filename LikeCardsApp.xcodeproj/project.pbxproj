@@ -17,6 +17,12 @@
 		E9045AFE299BF1B200FF688A /* LikeCardsAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9045AFD299BF1B200FF688A /* LikeCardsAppTests.swift */; };
 		E9045B08299BF1B200FF688A /* LikeCardsAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9045B07299BF1B200FF688A /* LikeCardsAppUITests.swift */; };
 		E9045B0A299BF1B200FF688A /* LikeCardsAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9045B09299BF1B200FF688A /* LikeCardsAppUITestsLaunchTests.swift */; };
+		E9045D1D299C14B500FF688A /* ChatModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9045CF8299C0FDD00FF688A /* ChatModule.framework */; };
+		E9045D1E299C14B500FF688A /* ChatModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9045CF8299C0FDD00FF688A /* ChatModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9045D1F299C14B500FF688A /* GamingModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9045D01299C0FE800FF688A /* GamingModule.framework */; };
+		E9045D20299C14B500FF688A /* GamingModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9045D01299C0FE800FF688A /* GamingModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E9045D21299C14B500FF688A /* StoreModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9045D0A299C0FF100FF688A /* StoreModule.framework */; };
+		E9045D22299C14B500FF688A /* StoreModule.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E9045D0A299C0FF100FF688A /* StoreModule.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +40,65 @@
 			remoteGlobalIDString = E9045ADF299BF1B100FF688A;
 			remoteInfo = LikeCardsApp;
 		};
+		E9045CF7299C0FDD00FF688A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9045CF2299C0FDD00FF688A /* ChatModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9045B71299BF4DE00FF688A;
+			remoteInfo = ChatModule;
+		};
+		E9045CF9299C0FDD00FF688A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9045CF2299C0FDD00FF688A /* ChatModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9045B7B299BF4DE00FF688A;
+			remoteInfo = ChatModuleTests;
+		};
+		E9045D00299C0FE800FF688A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9045CFB299C0FE800FF688A /* GamingModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9045BCB299BF6EA00FF688A;
+			remoteInfo = GamingModule;
+		};
+		E9045D02299C0FE800FF688A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9045CFB299C0FE800FF688A /* GamingModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9045BD5299BF6EA00FF688A;
+			remoteInfo = GamingModuleTests;
+		};
+		E9045D09299C0FF100FF688A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9045D04299C0FF100FF688A /* StoreModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9045B44299BF4AD00FF688A;
+			remoteInfo = StoreModule;
+		};
+		E9045D0B299C0FF100FF688A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9045D04299C0FF100FF688A /* StoreModule.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E9045B4E299BF4AD00FF688A;
+			remoteInfo = StoreModuleTests;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E9045D23299C14B500FF688A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E9045D1E299C14B500FF688A /* ChatModule.framework in Embed Frameworks */,
+				E9045D20299C14B500FF688A /* GamingModule.framework in Embed Frameworks */,
+				E9045D22299C14B500FF688A /* StoreModule.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E9045AE0299BF1B100FF688A /* LikeCardsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LikeCardsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +115,9 @@
 		E9045B03299BF1B200FF688A /* LikeCardsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LikeCardsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9045B07299BF1B200FF688A /* LikeCardsAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCardsAppUITests.swift; sourceTree = "<group>"; };
 		E9045B09299BF1B200FF688A /* LikeCardsAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCardsAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E9045CF2299C0FDD00FF688A /* ChatModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ChatModule.xcodeproj; path = ../ChatModule/ChatModule.xcodeproj; sourceTree = "<group>"; };
+		E9045CFB299C0FE800FF688A /* GamingModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GamingModule.xcodeproj; path = ../GamingModule/GamingModule.xcodeproj; sourceTree = "<group>"; };
+		E9045D04299C0FF100FF688A /* StoreModule.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = StoreModule.xcodeproj; path = ../StoreModule/StoreModule.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +125,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9045D1D299C14B500FF688A /* ChatModule.framework in Frameworks */,
+				E9045D1F299C14B500FF688A /* GamingModule.framework in Frameworks */,
+				E9045D21299C14B500FF688A /* StoreModule.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,10 +151,14 @@
 		E9045AD7299BF1B100FF688A = {
 			isa = PBXGroup;
 			children = (
+				E9045D04299C0FF100FF688A /* StoreModule.xcodeproj */,
+				E9045CFB299C0FE800FF688A /* GamingModule.xcodeproj */,
+				E9045CF2299C0FDD00FF688A /* ChatModule.xcodeproj */,
 				E9045AE2299BF1B100FF688A /* LikeCardsApp */,
 				E9045AFC299BF1B200FF688A /* LikeCardsAppTests */,
 				E9045B06299BF1B200FF688A /* LikeCardsAppUITests */,
 				E9045AE1299BF1B100FF688A /* Products */,
+				E9045D1C299C14B500FF688A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +204,40 @@
 			path = LikeCardsAppUITests;
 			sourceTree = "<group>";
 		};
+		E9045CF3299C0FDD00FF688A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9045CF8299C0FDD00FF688A /* ChatModule.framework */,
+				E9045CFA299C0FDD00FF688A /* ChatModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9045CFC299C0FE800FF688A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9045D01299C0FE800FF688A /* GamingModule.framework */,
+				E9045D03299C0FE800FF688A /* GamingModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9045D05299C0FF100FF688A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9045D0A299C0FF100FF688A /* StoreModule.framework */,
+				E9045D0C299C0FF100FF688A /* StoreModuleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9045D1C299C14B500FF688A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,6 +248,7 @@
 				E9045ADC299BF1B100FF688A /* Sources */,
 				E9045ADD299BF1B100FF688A /* Frameworks */,
 				E9045ADE299BF1B100FF688A /* Resources */,
+				E9045D23299C14B500FF688A /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,6 +329,20 @@
 			mainGroup = E9045AD7299BF1B100FF688A;
 			productRefGroup = E9045AE1299BF1B100FF688A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E9045CF3299C0FDD00FF688A /* Products */;
+					ProjectRef = E9045CF2299C0FDD00FF688A /* ChatModule.xcodeproj */;
+				},
+				{
+					ProductGroup = E9045CFC299C0FE800FF688A /* Products */;
+					ProjectRef = E9045CFB299C0FE800FF688A /* GamingModule.xcodeproj */;
+				},
+				{
+					ProductGroup = E9045D05299C0FF100FF688A /* Products */;
+					ProjectRef = E9045D04299C0FF100FF688A /* StoreModule.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E9045ADF299BF1B100FF688A /* LikeCardsApp */,
@@ -228,6 +351,51 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E9045CF8299C0FDD00FF688A /* ChatModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChatModule.framework;
+			remoteRef = E9045CF7299C0FDD00FF688A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9045CFA299C0FDD00FF688A /* ChatModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChatModuleTests.xctest;
+			remoteRef = E9045CF9299C0FDD00FF688A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9045D01299C0FE800FF688A /* GamingModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = GamingModule.framework;
+			remoteRef = E9045D00299C0FE800FF688A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9045D03299C0FE800FF688A /* GamingModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GamingModuleTests.xctest;
+			remoteRef = E9045D02299C0FE800FF688A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9045D0A299C0FF100FF688A /* StoreModule.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = StoreModule.framework;
+			remoteRef = E9045D09299C0FF100FF688A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		E9045D0C299C0FF100FF688A /* StoreModuleTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StoreModuleTests.xctest;
+			remoteRef = E9045D0B299C0FF100FF688A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		E9045ADE299BF1B100FF688A /* Resources */ = {
